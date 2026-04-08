@@ -801,40 +801,36 @@
       }, 2000);
     </script>
     <script>
-// ===== ADD EXTRA BRAINROT (AUTO ADD) =====
+// ===== ADD YOUR 4 BRAINROT (OG) =====
 
-const extraBrainrots = [
+const myBrainrots = [
   {
-    name: "Sigma Rizz Cat",
-    img: "https://i.ibb.co/3y0kF8G/sigma-cat.png",
+    name: "Boppin Bunny",
+    img: "PUT_IMAGE_1"
   },
   {
-    name: "Ohio Final Boss",
-    img: "https://i.ibb.co/YpPZKzY/ohio-boss.png",
+    name: "Hydra Bunny",
+    img: "PUT_IMAGE_2"
   },
   {
-    name: "Skull Drip King",
-    img: "https://i.ibb.co/2kL8K0f/skull-drip.png",
+    name: "Dark Bunny",
+    img: "PUT_IMAGE_3"
   },
   {
-    name: "Gigachad Ghost",
-    img: "https://i.ibb.co/9v3Zk5Q/gigachad-ghost.png",
-  },
-  {
-    name: "Shadow Sigma Wolf",
-    img: "https://i.ibb.co/7tZbX2M/sigma-wolf.png",
+    name: "Golden Bunny",
+    img: "PUT_IMAGE_4"
   }
 ];
 
-// نضيفهم فالشبكة مباشرة
 const gridEl = document.getElementById("grid");
 
-extraBrainrots.forEach((c) => {
+myBrainrots.forEach((c) => {
   const d = document.createElement("div");
   d.className = "card";
 
   d.innerHTML = `
-    <div class="stock-badge">${Math.floor(Math.random() * 5) + 2} Left</div>
+    <div class="og-badge">OG 👑</div>
+    <div class="stock-badge">1 Left</div>
     <img src="${c.img}" loading="lazy">
     <div class="name">${c.name}</div>
   `;
@@ -845,7 +841,8 @@ extraBrainrots.forEach((c) => {
     document.getElementById("modal").classList.add("active");
   };
 
-  gridEl.appendChild(d);
+  // 👑 يطلعو للفوق
+  gridEl.prepend(d);
 });
 </script>
   </body>
